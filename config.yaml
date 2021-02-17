@@ -15,6 +15,12 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: blog-weilining-cf
+    name: The weilining Blog
+    url: 'https://blog.weilining.cf/' 
+    method: GET
+    expectStatus: 200
+    
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
     description: 'You write code. They handle the rest.' # default=empty
